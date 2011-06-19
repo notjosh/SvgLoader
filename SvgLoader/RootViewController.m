@@ -18,6 +18,7 @@ enum RootViewControllerSections {
 
 @interface RootViewController (Private)
 - (NSArray *)recursivePathsForResourcesOfType:(NSString *)type inDirectory:(NSString *)directoryPath;
+- (NSString *)pathForIndexPath:(NSIndexPath *)indexPath;
 @end
 
 @implementation RootViewController
@@ -55,7 +56,7 @@ enum RootViewControllerSections {
     
     while (nil != (filePath = [enumerator nextObject])) {
         if( [[filePath pathExtension] isEqualToString:type] ){
-            [filePaths addObject:[directoryPath stringByAppendingString: filePath]];
+            [filePaths addObject:[NSString stringWithFormat:@"%@/%@", directoryPath, filePath]];
         }
     }
 
@@ -155,6 +156,7 @@ enum RootViewControllerSections {
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     DetailViewController *detailViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"detail"];
+    detailViewController.svgPath = [self pathForIndexPath:indexPath];
     [self.navigationController pushViewController:detailViewController animated:YES];
 }
 
@@ -184,10 +186,14 @@ enum RootViewControllerSections {
     NSAssert(indexPath.section < NUM_SECTIONS, errorMessage);
 
 //    cell.textLabel.text = [NSString stringWithFormat:@"%d,%d", indexPath.section, indexPath.row];
-    NSString *path = [[_svgFiles objectAtIndex:indexPath.section] objectAtIndex:indexPath.row];
+    NSString *path = [self pathForIndexPath:indexPath];
     cell.textLabel.text = [path lastPathComponent];
     
     return cell;
+}
+
+- (NSString *)pathForIndexPath:(NSIndexPath *)indexPath {
+    return [[_svgFiles objectAtIndex:indexPath.section] objectAtIndex:indexPath.row];
 }
 
 @end

@@ -8,7 +8,8 @@
 
 #import "DetailViewController.h"
 
-#import "RootViewController.h"
+#import "SVGDocument.h"
+#import "SVGView.h"
 
 @interface DetailViewController ()
 - (void)configureView;
@@ -16,8 +17,15 @@
 
 @implementation DetailViewController
 
-@synthesize detailItem = _detailItem;
-@synthesize detailDescriptionLabel = _detailDescriptionLabel;
+@synthesize svgPath = _svgPath;
+@synthesize svgView = _svgView;
+
+- (void)dealloc {
+    [_svgPath release], _svgPath = nil;
+    [_svgView release], _svgView = nil;
+
+    [super dealloc];
+}
 
 - (id)initWithCoder:(NSCoder *)coder
 {
@@ -27,31 +35,25 @@
     return self;
 }
 
-#pragma mark - Managing the detail item
-
-- (void)setDetailItem:(id)newDetailItem
-{
-    if (_detailItem != newDetailItem) {
-        _detailItem = newDetailItem;
-        
-        // Update the view.
-        [self configureView];
-    }
-}
-
-- (void)configureView
-{
-    // Update the user interface for the detail item.
-
-    if (self.detailItem) {
-        self.detailDescriptionLabel.text = [self.detailItem description];
-    }
-}
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Release any cached data, images, etc that aren't in use.
+}
+
+#pragma mark - Load SVG
+- (void)configureView {
+    if (nil == _svgPath) {
+        NSLog(@"No _svgPath, bailing from configureView");
+        return;
+    }
+
+    NSLog(@"Attempting to load _svgPath: %@", _svgPath);
+
+    SVGDocument *document = [SVGDocument documentWithContentsOfFile:_svgPath];
+	
+	self.svgView.bounds = CGRectMake(0.0f, 0.0f, document.width, document.height);
+	self.svgView.document = document;
 }
 
 #pragma mark - View lifecycle

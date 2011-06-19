@@ -59,6 +59,8 @@
 		42D85ECE13AE2BD800E882CD /* Skype-10.skitch in Resources */ = {isa = PBXBuildFile; fileRef = 42D85EBF13AE2BD800E882CD /* Skype-10.skitch */; };
 		42D85ECF13AE2BD800E882CD /* Skype-11.skitch in Resources */ = {isa = PBXBuildFile; fileRef = 42D85EC013AE2BD800E882CD /* Skype-11.skitch */; };
 		42D85ED013AE2BD800E882CD /* Skype-12.skitch in Resources */ = {isa = PBXBuildFile; fileRef = 42D85EC113AE2BD800E882CD /* Skype-12.skitch */; };
+		42F1941213AE395200518B5C /* skitched-45.skitch in Resources */ = {isa = PBXBuildFile; fileRef = 42F1941113AE395200518B5C /* skitched-45.skitch */; };
+		42F1941513AE3CB000518B5C /* skitched-45.svg in Resources */ = {isa = PBXBuildFile; fileRef = 42F1941413AE3CB000518B5C /* skitched-45.svg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -150,6 +152,8 @@
 		42D85EBF13AE2BD800E882CD /* Skype-10.skitch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Skype-10.skitch"; path = "Resources/SVG/Skype-10.skitch"; sourceTree = "<group>"; };
 		42D85EC013AE2BD800E882CD /* Skype-11.skitch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Skype-11.skitch"; path = "Resources/SVG/Skype-11.skitch"; sourceTree = "<group>"; };
 		42D85EC113AE2BD800E882CD /* Skype-12.skitch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Skype-12.skitch"; path = "Resources/SVG/Skype-12.skitch"; sourceTree = "<group>"; };
+		42F1941113AE395200518B5C /* skitched-45.skitch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "skitched-45.skitch"; path = "Resources/SVG/skitched-45.skitch"; sourceTree = "<group>"; };
+		42F1941413AE3CB000518B5C /* skitched-45.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "skitched-45.svg"; path = "Resources/SVG/skitched-45.svg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -344,6 +348,8 @@
 				42D85EB313AE2BD800E882CD /* Lion.svg */,
 				42D85EB413AE2BD800E882CD /* Monkey.svg */,
 				42D85EB513AE2BD800E882CD /* Note.svg */,
+				42F1941413AE3CB000518B5C /* skitched-45.svg */,
+				42F1941113AE395200518B5C /* skitched-45.skitch */,
 				42D85EB613AE2BD800E882CD /* Skype-1.skitch */,
 				42D85EB713AE2BD800E882CD /* Skype-2.skitch */,
 				42D85EB813AE2BD800E882CD /* Skype-3.skitch */,
@@ -445,6 +451,8 @@
 				42D85ECE13AE2BD800E882CD /* Skype-10.skitch in Resources */,
 				42D85ECF13AE2BD800E882CD /* Skype-11.skitch in Resources */,
 				42D85ED013AE2BD800E882CD /* Skype-12.skitch in Resources */,
+				42F1941213AE395200518B5C /* skitched-45.skitch in Resources */,
+				42F1941513AE3CB000518B5C /* skitched-45.svg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

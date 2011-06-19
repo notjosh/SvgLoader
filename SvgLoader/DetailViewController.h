@@ -8,10 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DetailViewController : UIViewController
+@class SVGView;
 
-@property (strong, nonatomic) id detailItem;
+@interface DetailViewController : UIViewController {
+    NSString *_svgPath;
+    SVGView *_svgView;
+}
 
-@property (strong, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@property (strong, nonatomic) NSString *svgPath;
+@property (strong, nonatomic) IBOutlet SVGView *svgView;
 
 @end
