@@ -44,6 +44,21 @@
 		42777B0113AE244000462E3E /* SVGUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 42777AEC13AE244000462E3E /* SVGUtils.m */; };
 		42777B0213AE244000462E3E /* SVGView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42777AEF13AE244000462E3E /* SVGView.m */; };
 		42777B0613AE274300462E3E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42777B0513AE274300462E3E /* QuartzCore.framework */; };
+		42D85EC213AE2BD800E882CD /* Lion.svg in Resources */ = {isa = PBXBuildFile; fileRef = 42D85EB313AE2BD800E882CD /* Lion.svg */; };
+		42D85EC313AE2BD800E882CD /* Monkey.svg in Resources */ = {isa = PBXBuildFile; fileRef = 42D85EB413AE2BD800E882CD /* Monkey.svg */; };
+		42D85EC413AE2BD800E882CD /* Note.svg in Resources */ = {isa = PBXBuildFile; fileRef = 42D85EB513AE2BD800E882CD /* Note.svg */; };
+		42D85EC513AE2BD800E882CD /* Skype-1.skitch in Resources */ = {isa = PBXBuildFile; fileRef = 42D85EB613AE2BD800E882CD /* Skype-1.skitch */; };
+		42D85EC613AE2BD800E882CD /* Skype-2.skitch in Resources */ = {isa = PBXBuildFile; fileRef = 42D85EB713AE2BD800E882CD /* Skype-2.skitch */; };
+		42D85EC713AE2BD800E882CD /* Skype-3.skitch in Resources */ = {isa = PBXBuildFile; fileRef = 42D85EB813AE2BD800E882CD /* Skype-3.skitch */; };
+		42D85EC813AE2BD800E882CD /* Skype-4.skitch in Resources */ = {isa = PBXBuildFile; fileRef = 42D85EB913AE2BD800E882CD /* Skype-4.skitch */; };
+		42D85EC913AE2BD800E882CD /* Skype-5.skitch in Resources */ = {isa = PBXBuildFile; fileRef = 42D85EBA13AE2BD800E882CD /* Skype-5.skitch */; };
+		42D85ECA13AE2BD800E882CD /* Skype-6.skitch in Resources */ = {isa = PBXBuildFile; fileRef = 42D85EBB13AE2BD800E882CD /* Skype-6.skitch */; };
+		42D85ECB13AE2BD800E882CD /* Skype-7.skitch in Resources */ = {isa = PBXBuildFile; fileRef = 42D85EBC13AE2BD800E882CD /* Skype-7.skitch */; };
+		42D85ECC13AE2BD800E882CD /* Skype-8.skitch in Resources */ = {isa = PBXBuildFile; fileRef = 42D85EBD13AE2BD800E882CD /* Skype-8.skitch */; };
+		42D85ECD13AE2BD800E882CD /* Skype-9.skitch in Resources */ = {isa = PBXBuildFile; fileRef = 42D85EBE13AE2BD800E882CD /* Skype-9.skitch */; };
+		42D85ECE13AE2BD800E882CD /* Skype-10.skitch in Resources */ = {isa = PBXBuildFile; fileRef = 42D85EBF13AE2BD800E882CD /* Skype-10.skitch */; };
+		42D85ECF13AE2BD800E882CD /* Skype-11.skitch in Resources */ = {isa = PBXBuildFile; fileRef = 42D85EC013AE2BD800E882CD /* Skype-11.skitch */; };
+		42D85ED013AE2BD800E882CD /* Skype-12.skitch in Resources */ = {isa = PBXBuildFile; fileRef = 42D85EC113AE2BD800E882CD /* Skype-12.skitch */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +135,21 @@
 		42777AEE13AE244000462E3E /* SVGView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVGView.h; sourceTree = "<group>"; };
 		42777AEF13AE244000462E3E /* SVGView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVGView.m; sourceTree = "<group>"; };
 		42777B0513AE274300462E3E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		42D85EB313AE2BD800E882CD /* Lion.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Lion.svg; path = Resources/SVG/Lion.svg; sourceTree = "<group>"; };
+		42D85EB413AE2BD800E882CD /* Monkey.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Monkey.svg; path = Resources/SVG/Monkey.svg; sourceTree = "<group>"; };
+		42D85EB513AE2BD800E882CD /* Note.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Note.svg; path = Resources/SVG/Note.svg; sourceTree = "<group>"; };
+		42D85EB613AE2BD800E882CD /* Skype-1.skitch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Skype-1.skitch"; path = "Resources/SVG/Skype-1.skitch"; sourceTree = "<group>"; };
+		42D85EB713AE2BD800E882CD /* Skype-2.skitch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Skype-2.skitch"; path = "Resources/SVG/Skype-2.skitch"; sourceTree = "<group>"; };
+		42D85EB813AE2BD800E882CD /* Skype-3.skitch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Skype-3.skitch"; path = "Resources/SVG/Skype-3.skitch"; sourceTree = "<group>"; };
+		42D85EB913AE2BD800E882CD /* Skype-4.skitch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Skype-4.skitch"; path = "Resources/SVG/Skype-4.skitch"; sourceTree = "<group>"; };
+		42D85EBA13AE2BD800E882CD /* Skype-5.skitch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Skype-5.skitch"; path = "Resources/SVG/Skype-5.skitch"; sourceTree = "<group>"; };
+		42D85EBB13AE2BD800E882CD /* Skype-6.skitch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Skype-6.skitch"; path = "Resources/SVG/Skype-6.skitch"; sourceTree = "<group>"; };
+		42D85EBC13AE2BD800E882CD /* Skype-7.skitch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Skype-7.skitch"; path = "Resources/SVG/Skype-7.skitch"; sourceTree = "<group>"; };
+		42D85EBD13AE2BD800E882CD /* Skype-8.skitch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Skype-8.skitch"; path = "Resources/SVG/Skype-8.skitch"; sourceTree = "<group>"; };
+		42D85EBE13AE2BD800E882CD /* Skype-9.skitch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Skype-9.skitch"; path = "Resources/SVG/Skype-9.skitch"; sourceTree = "<group>"; };
+		42D85EBF13AE2BD800E882CD /* Skype-10.skitch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Skype-10.skitch"; path = "Resources/SVG/Skype-10.skitch"; sourceTree = "<group>"; };
+		42D85EC013AE2BD800E882CD /* Skype-11.skitch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Skype-11.skitch"; path = "Resources/SVG/Skype-11.skitch"; sourceTree = "<group>"; };
+		42D85EC113AE2BD800E882CD /* Skype-12.skitch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Skype-12.skitch"; path = "Resources/SVG/Skype-12.skitch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +228,7 @@
 		42777A8F13AE240E00462E3E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				42D85EB013AE2BC300E882CD /* Resources */,
 				42777A9013AE240E00462E3E /* SvgLoader-Info.plist */,
 				42777A9113AE240E00462E3E /* InfoPlist.strings */,
 				42777A9413AE240E00462E3E /* main.m */,
@@ -299,6 +330,36 @@
 			path = Classes/SVGKit/iOS;
 			sourceTree = "<group>";
 		};
+		42D85EB013AE2BC300E882CD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				42D85EB213AE2BCE00E882CD /* SVG */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		42D85EB213AE2BCE00E882CD /* SVG */ = {
+			isa = PBXGroup;
+			children = (
+				42D85EB313AE2BD800E882CD /* Lion.svg */,
+				42D85EB413AE2BD800E882CD /* Monkey.svg */,
+				42D85EB513AE2BD800E882CD /* Note.svg */,
+				42D85EB613AE2BD800E882CD /* Skype-1.skitch */,
+				42D85EB713AE2BD800E882CD /* Skype-2.skitch */,
+				42D85EB813AE2BD800E882CD /* Skype-3.skitch */,
+				42D85EB913AE2BD800E882CD /* Skype-4.skitch */,
+				42D85EBA13AE2BD800E882CD /* Skype-5.skitch */,
+				42D85EBB13AE2BD800E882CD /* Skype-6.skitch */,
+				42D85EBC13AE2BD800E882CD /* Skype-7.skitch */,
+				42D85EBD13AE2BD800E882CD /* Skype-8.skitch */,
+				42D85EBE13AE2BD800E882CD /* Skype-9.skitch */,
+				42D85EBF13AE2BD800E882CD /* Skype-10.skitch */,
+				42D85EC013AE2BD800E882CD /* Skype-11.skitch */,
+				42D85EC113AE2BD800E882CD /* Skype-12.skitch */,
+			);
+			name = SVG;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -369,6 +430,21 @@
 				42777A9313AE240E00462E3E /* InfoPlist.strings in Resources */,
 				42777A9C13AE240E00462E3E /* MainStoryboard.storyboard in Resources */,
 				42777AA113AE240E00462E3E /* DetailViewController.h in Resources */,
+				42D85EC213AE2BD800E882CD /* Lion.svg in Resources */,
+				42D85EC313AE2BD800E882CD /* Monkey.svg in Resources */,
+				42D85EC413AE2BD800E882CD /* Note.svg in Resources */,
+				42D85EC513AE2BD800E882CD /* Skype-1.skitch in Resources */,
+				42D85EC613AE2BD800E882CD /* Skype-2.skitch in Resources */,
+				42D85EC713AE2BD800E882CD /* Skype-3.skitch in Resources */,
+				42D85EC813AE2BD800E882CD /* Skype-4.skitch in Resources */,
+				42D85EC913AE2BD800E882CD /* Skype-5.skitch in Resources */,
+				42D85ECA13AE2BD800E882CD /* Skype-6.skitch in Resources */,
+				42D85ECB13AE2BD800E882CD /* Skype-7.skitch in Resources */,
+				42D85ECC13AE2BD800E882CD /* Skype-8.skitch in Resources */,
+				42D85ECD13AE2BD800E882CD /* Skype-9.skitch in Resources */,
+				42D85ECE13AE2BD800E882CD /* Skype-10.skitch in Resources */,
+				42D85ECF13AE2BD800E882CD /* Skype-11.skitch in Resources */,
+				42D85ED013AE2BD800E882CD /* Skype-12.skitch in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,6 +676,7 @@
 				42777ABF13AE240E00462E3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		42777AC013AE240E00462E3E /* Build configuration list for PBXNativeTarget "SvgLoaderTests" */ = {
 			isa = XCConfigurationList;
@@ -608,6 +685,7 @@
 				42777AC213AE240E00462E3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

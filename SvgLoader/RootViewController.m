@@ -10,15 +10,58 @@
 
 #import "DetailViewController.h"
 
+enum RootViewControllerSections {
+    kRootViewControllerSectionSvg = 0,
+    kRootViewControllerSectionSkitch,
+    NUM_SECTIONS
+};
+
+@interface RootViewController (Private)
+- (NSArray *)recursivePathsForResourcesOfType:(NSString *)type inDirectory:(NSString *)directoryPath;
+@end
+
 @implementation RootViewController
 
+- (void)dealloc {
+    [_svgFiles release], _svgFiles = nil;
+
+    [super dealloc];
+}
 
 - (id)initWithCoder:(NSCoder *)coder
 {
     self = [super initWithCoder:coder];
     if (self) {
+        _svgFiles = [[NSMutableArray alloc] initWithCapacity:NUM_SECTIONS];
+
+        NSString *resourcesDirectory = [[NSBundle mainBundle] bundlePath];
+        [_svgFiles addObject:[self recursivePathsForResourcesOfType:@"svg" inDirectory:resourcesDirectory]];
+        [_svgFiles addObject:[self recursivePathsForResourcesOfType:@"skitch" inDirectory:resourcesDirectory]];
+
+        //NSAssert(nil == error, @"Error loading SVG files", [error description]);
+
+        NSLog(@"%@", _svgFiles);
     }
     return self;
+}
+
+- (NSArray *)recursivePathsForResourcesOfType: (NSString *)type inDirectory: (NSString *)directoryPath {
+
+    NSMutableArray *filePaths = [[NSMutableArray alloc] init];
+
+    NSDirectoryEnumerator *enumerator = [[[NSFileManager defaultManager] enumeratorAtPath:directoryPath] retain] ;
+
+    NSString *filePath;
+    
+    while (nil != (filePath = [enumerator nextObject])) {
+        if( [[filePath pathExtension] isEqualToString:type] ){
+            [filePaths addObject:[directoryPath stringByAppendingString: filePath]];
+        }
+    }
+
+    [enumerator release];
+
+    return [filePaths autorelease];
 }
 
 - (void)didReceiveMemoryWarning
@@ -112,8 +155,39 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     DetailViewController *detailViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"detail"];
-    // Pass the selected object to the new view controller.
     [self.navigationController pushViewController:detailViewController animated:YES];
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return NUM_SECTIONS;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [[_svgFiles objectAtIndex:section] count];
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    switch (section) {
+        case 0:
+            return @"SVG";
+        case 1:
+            return @"Skitch";
+    }
+
+    return @"Unknown";
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AnotherIdentifier"];
+
+    NSString *errorMessage = [NSString stringWithFormat:@"indexPath.section out of bounds (%d >= %d)", indexPath.section, NUM_SECTIONS];
+    NSAssert(indexPath.section < NUM_SECTIONS, errorMessage);
+
+//    cell.textLabel.text = [NSString stringWithFormat:@"%d,%d", indexPath.section, indexPath.row];
+    NSString *path = [[_svgFiles objectAtIndex:indexPath.section] objectAtIndex:indexPath.row];
+    cell.textLabel.text = [path lastPathComponent];
+    
+    return cell;
 }
 
 @end
