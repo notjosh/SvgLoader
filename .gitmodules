@@ -1,0 +1,3 @@
+[submodule "Externals/SVGKit"]
+	path = Externals/SVGKit
+	url = git://github.com/notjosh/SVGKit.git
