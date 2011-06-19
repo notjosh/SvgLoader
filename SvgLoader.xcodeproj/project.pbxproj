@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42777A8913AE240E00462E3E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42777A8813AE240E00462E3E /* UIKit.framework */; };
+		42777A8B13AE240E00462E3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42777A8A13AE240E00462E3E /* Foundation.framework */; };
+		42777A8D13AE240E00462E3E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42777A8C13AE240E00462E3E /* CoreGraphics.framework */; };
+		42777A9313AE240E00462E3E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42777A9113AE240E00462E3E /* InfoPlist.strings */; };
+		42777A9513AE240E00462E3E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42777A9413AE240E00462E3E /* main.m */; };
+		42777A9913AE240E00462E3E /* SvgLoaderAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42777A9813AE240E00462E3E /* SvgLoaderAppDelegate.m */; };
+		42777A9C13AE240E00462E3E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42777A9A13AE240E00462E3E /* MainStoryboard.storyboard */; };
+		42777A9F13AE240E00462E3E /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42777A9E13AE240E00462E3E /* RootViewController.m */; };
+		42777AA113AE240E00462E3E /* DetailViewController.h in Resources */ = {isa = PBXBuildFile; fileRef = 42777AA013AE240E00462E3E /* DetailViewController.h */; };
+		42777AA313AE240E00462E3E /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42777AA213AE240E00462E3E /* DetailViewController.m */; };
+		42777AAB13AE240E00462E3E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42777AAA13AE240E00462E3E /* SenTestingKit.framework */; };
+		42777AAC13AE240E00462E3E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42777A8813AE240E00462E3E /* UIKit.framework */; };
+		42777AAD13AE240E00462E3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42777A8A13AE240E00462E3E /* Foundation.framework */; };
+		42777AAE13AE240E00462E3E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42777A8C13AE240E00462E3E /* CoreGraphics.framework */; };
+		42777AB613AE240E00462E3E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42777AB413AE240E00462E3E /* InfoPlist.strings */; };
+		42777AB813AE240E00462E3E /* SvgLoaderTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 42777AB713AE240E00462E3E /* SvgLoaderTests.h */; };
+		42777ABA13AE240E00462E3E /* SvgLoaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42777AB913AE240E00462E3E /* SvgLoaderTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		42777AAF13AE240E00462E3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42777A7B13AE240E00462E3E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42777A8313AE240E00462E3E;
+			remoteInfo = SvgLoader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		42777A8413AE240E00462E3E /* SvgLoader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SvgLoader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42777A8813AE240E00462E3E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		42777A8A13AE240E00462E3E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		42777A8C13AE240E00462E3E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		42777A9013AE240E00462E3E /* SvgLoader-Info.plist */ = {isa = PBXFileReference; path = "SvgLoader-Info.plist"; sourceTree = "<group>"; };
+		42777A9213AE240E00462E3E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		42777A9413AE240E00462E3E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		42777A9613AE240E00462E3E /* SvgLoader-Prefix.pch */ = {isa = PBXFileReference; path = "SvgLoader-Prefix.pch"; sourceTree = "<group>"; };
+		42777A9713AE240E00462E3E /* SvgLoaderAppDelegate.h */ = {isa = PBXFileReference; path = SvgLoaderAppDelegate.h; sourceTree = "<group>"; };
+		42777A9813AE240E00462E3E /* SvgLoaderAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SvgLoaderAppDelegate.m; sourceTree = "<group>"; };
+		42777A9B13AE240E00462E3E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		42777A9D13AE240E00462E3E /* RootViewController.h */ = {isa = PBXFileReference; path = RootViewController.h; sourceTree = "<group>"; };
+		42777A9E13AE240E00462E3E /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		42777AA013AE240E00462E3E /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		42777AA213AE240E00462E3E /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		42777AA913AE240E00462E3E /* SvgLoaderTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SvgLoaderTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		42777AAA13AE240E00462E3E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		42777AB313AE240E00462E3E /* SvgLoaderTests-Info.plist */ = {isa = PBXFileReference; path = "SvgLoaderTests-Info.plist"; sourceTree = "<group>"; };
+		42777AB513AE240E00462E3E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		42777AB713AE240E00462E3E /* SvgLoaderTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SvgLoaderTests.h; sourceTree = "<group>"; };
+		42777AB913AE240E00462E3E /* SvgLoaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SvgLoaderTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42777A8113AE240E00462E3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42777A8913AE240E00462E3E /* UIKit.framework in Frameworks */,
+				42777A8B13AE240E00462E3E /* Foundation.framework in Frameworks */,
+				42777A8D13AE240E00462E3E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42777AA513AE240E00462E3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42777AAB13AE240E00462E3E /* SenTestingKit.framework in Frameworks */,
+				42777AAC13AE240E00462E3E /* UIKit.framework in Frameworks */,
+				42777AAD13AE240E00462E3E /* Foundation.framework in Frameworks */,
+				42777AAE13AE240E00462E3E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42777A7913AE240E00462E3E = {
+			isa = PBXGroup;
+			children = (
+				42777A8E13AE240E00462E3E /* SvgLoader */,
+				42777AB113AE240E00462E3E /* SvgLoaderTests */,
+				42777A8713AE240E00462E3E /* Frameworks */,
+				42777A8513AE240E00462E3E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		42777A8513AE240E00462E3E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42777A8413AE240E00462E3E /* SvgLoader.app */,
+				42777AA913AE240E00462E3E /* SvgLoaderTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42777A8713AE240E00462E3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42777A8813AE240E00462E3E /* UIKit.framework */,
+				42777A8A13AE240E00462E3E /* Foundation.framework */,
+				42777A8C13AE240E00462E3E /* CoreGraphics.framework */,
+				42777AAA13AE240E00462E3E /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		42777A8E13AE240E00462E3E /* SvgLoader */ = {
+			isa = PBXGroup;
+			children = (
+				42777A9713AE240E00462E3E /* SvgLoaderAppDelegate.h */,
+				42777A9813AE240E00462E3E /* SvgLoaderAppDelegate.m */,
+				42777A9A13AE240E00462E3E /* MainStoryboard.storyboard */,
+				42777A9D13AE240E00462E3E /* RootViewController.h */,
+				42777A9E13AE240E00462E3E /* RootViewController.m */,
+				42777AA013AE240E00462E3E /* DetailViewController.h */,
+				42777AA213AE240E00462E3E /* DetailViewController.m */,
+				42777A8F13AE240E00462E3E /* Supporting Files */,
+			);
+			path = SvgLoader;
+			sourceTree = "<group>";
+		};
+		42777A8F13AE240E00462E3E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				42777A9013AE240E00462E3E /* SvgLoader-Info.plist */,
+				42777A9113AE240E00462E3E /* InfoPlist.strings */,
+				42777A9413AE240E00462E3E /* main.m */,
+				42777A9613AE240E00462E3E /* SvgLoader-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42777AB113AE240E00462E3E /* SvgLoaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				42777AB713AE240E00462E3E /* SvgLoaderTests.h */,
+				42777AB913AE240E00462E3E /* SvgLoaderTests.m */,
+				42777AB213AE240E00462E3E /* Supporting Files */,
+			);
+			path = SvgLoaderTests;
+			sourceTree = "<group>";
+		};
+		42777AB213AE240E00462E3E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				42777AB313AE240E00462E3E /* SvgLoaderTests-Info.plist */,
+				42777AB413AE240E00462E3E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42777A8313AE240E00462E3E /* SvgLoader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42777ABD13AE240E00462E3E /* Build configuration list for PBXNativeTarget "SvgLoader" */;
+			buildPhases = (
+				42777A8013AE240E00462E3E /* Sources */,
+				42777A8113AE240E00462E3E /* Frameworks */,
+				42777A8213AE240E00462E3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SvgLoader;
+			productName = SvgLoader;
+			productReference = 42777A8413AE240E00462E3E /* SvgLoader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		42777AA813AE240E00462E3E /* SvgLoaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42777AC013AE240E00462E3E /* Build configuration list for PBXNativeTarget "SvgLoaderTests" */;
+			buildPhases = (
+				42777AA413AE240E00462E3E /* Sources */,
+				42777AA513AE240E00462E3E /* Frameworks */,
+				42777AA613AE240E00462E3E /* Resources */,
+				42777AA713AE240E00462E3E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42777AB013AE240E00462E3E /* PBXTargetDependency */,
+			);
+			name = SvgLoaderTests;
+			productName = SvgLoaderTests;
+			productReference = 42777AA913AE240E00462E3E /* SvgLoaderTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42777A7B13AE240E00462E3E /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 42777A7E13AE240E00462E3E /* Build configuration list for PBXProject "SvgLoader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 42777A7913AE240E00462E3E;
+			productRefGroup = 42777A8513AE240E00462E3E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42777A8313AE240E00462E3E /* SvgLoader */,
+				42777AA813AE240E00462E3E /* SvgLoaderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42777A8213AE240E00462E3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42777A9313AE240E00462E3E /* InfoPlist.strings in Resources */,
+				42777A9C13AE240E00462E3E /* MainStoryboard.storyboard in Resources */,
+				42777AA113AE240E00462E3E /* DetailViewController.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42777AA613AE240E00462E3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42777AB613AE240E00462E3E /* InfoPlist.strings in Resources */,
+				42777AB813AE240E00462E3E /* SvgLoaderTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42777AA713AE240E00462E3E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42777A8013AE240E00462E3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42777A9513AE240E00462E3E /* main.m in Sources */,
+				42777A9913AE240E00462E3E /* SvgLoaderAppDelegate.m in Sources */,
+				42777A9F13AE240E00462E3E /* RootViewController.m in Sources */,
+				42777AA313AE240E00462E3E /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42777AA413AE240E00462E3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42777ABA13AE240E00462E3E /* SvgLoaderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		42777AB013AE240E00462E3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42777A8313AE240E00462E3E /* SvgLoader */;
+			targetProxy = 42777AAF13AE240E00462E3E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		42777A9113AE240E00462E3E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42777A9213AE240E00462E3E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		42777A9A13AE240E00462E3E /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42777A9B13AE240E00462E3E /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		42777AB413AE240E00462E3E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42777AB513AE240E00462E3E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		42777ABB13AE240E00462E3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		42777ABC13AE240E00462E3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		42777ABE13AE240E00462E3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SvgLoader/SvgLoader-Prefix.pch";
+				INFOPLIST_FILE = "SvgLoader/SvgLoader-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		42777ABF13AE240E00462E3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SvgLoader/SvgLoader-Prefix.pch";
+				INFOPLIST_FILE = "SvgLoader/SvgLoader-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		42777AC113AE240E00462E3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SvgLoader.app/SvgLoader";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SvgLoader/SvgLoader-Prefix.pch";
+				INFOPLIST_FILE = "SvgLoaderTests/SvgLoaderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		42777AC213AE240E00462E3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SvgLoader.app/SvgLoader";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SvgLoader/SvgLoader-Prefix.pch";
+				INFOPLIST_FILE = "SvgLoaderTests/SvgLoaderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42777A7E13AE240E00462E3E /* Build configuration list for PBXProject "SvgLoader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42777ABB13AE240E00462E3E /* Debug */,
+				42777ABC13AE240E00462E3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42777ABD13AE240E00462E3E /* Build configuration list for PBXNativeTarget "SvgLoader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42777ABE13AE240E00462E3E /* Debug */,
+				42777ABF13AE240E00462E3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		42777AC013AE240E00462E3E /* Build configuration list for PBXNativeTarget "SvgLoaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42777AC113AE240E00462E3E /* Debug */,
+				42777AC213AE240E00462E3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 42777A7B13AE240E00462E3E /* Project object */;
+}
