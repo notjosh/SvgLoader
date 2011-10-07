@@ -51,8 +51,8 @@
     NSLog(@"Attempting to load _svgPath: %@", _svgPath);
 
     SVGDocument *document = [SVGDocument documentWithContentsOfFile:_svgPath];
-	
-	self.svgView.bounds = CGRectMake(0.0f, 0.0f, document.width, document.height);
+
+//	self.svgView.bounds = CGRectMake(0.0f, 0.0f, document.width, document.height);
 	self.svgView.document = document;
 }
 

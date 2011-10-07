@@ -41,7 +41,7 @@ enum RootViewControllerSections {
 
         //NSAssert(nil == error, @"Error loading SVG files", [error description]);
 
-        NSLog(@"%@", _svgFiles);
+//        NSLog(@"%@", _svgFiles);
     }
     return self;
 }

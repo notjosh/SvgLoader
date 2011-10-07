@@ -11,8 +11,6 @@
 @class SVGView;
 
 @interface DetailViewController : UIViewController {
-    NSString *_svgPath;
-    SVGView *_svgView;
 }
 
 @property (strong, nonatomic) NSString *svgPath;
